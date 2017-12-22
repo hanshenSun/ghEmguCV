@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using Grasshopper.Kernel;
 using Rhino.Geometry;
 using Emgu.CV;
+using Emgu.CV.CvEnum;           // usual Emgu Cv imports
+using Emgu.CV.Structure;        //
+using Emgu.CV.UI;
 
 namespace ghEmguCV
 {
@@ -28,6 +31,9 @@ namespace ghEmguCV
         /// </summary>
         protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
         {
+            pManager.AddTextParameter("folder", "Folder Directory", "Directory to the folder that contains images", GH_ParamAccess.item);
+            pManager.AddTextParameter("imgName", "Image Name", "Name of the Image to process", GH_ParamAccess.item);
+            pManager[1].Optional = true;
         }
 
         /// <summary>
@@ -35,6 +41,8 @@ namespace ghEmguCV
         /// </summary>
         protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
         {
+            pManager.AddTextParameter("output", "output", "output", GH_ParamAccess.list);
+
         }
 
         /// <summary>
@@ -44,9 +52,25 @@ namespace ghEmguCV
         /// to store data in output parameters.</param>
         protected override void SolveInstance(IGH_DataAccess DA)
         {
-            Mat newImg = new Mat(fileLoc)
-            newImg.
-            
+            string fileDirectory = "";
+            DA.GetData(0, ref fileDirectory);
+
+            Mat newImg = new Mat(fileDirectory, Emgu.CV.CvEnum.ImreadModes.Grayscale);
+            Mat imgBlurred = new Mat(newImg.Size, DepthType.Cv8U, 1);
+            Mat imgCanny = new Mat(newImg.Size, DepthType.Cv8U, 1);
+
+            CvInvoke.Canny(imgBlurred, imgCanny, 100, 200);
+            System.Array outputData = imgCanny.Data;
+
+
+            List<string> dataContainer = new List<string>();
+            foreach(var data in outputData)
+            {
+                dataContainer.Add(data.ToString();
+            }
+
+            DA.SetDataList(0, dataContainer);
+
         }
 
         /// <summary>
