@@ -66,7 +66,7 @@ namespace ghEmguCV
             List<string> dataContainer = new List<string>();
             foreach(var data in outputData)
             {
-                dataContainer.Add(data.ToString();
+                dataContainer.Add(data.ToString());
             }
 
             DA.SetDataList(0, dataContainer);

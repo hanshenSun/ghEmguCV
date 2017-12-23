@@ -1,0 +1,15 @@
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\obj\Debug64\ghEmguCV.csprojResolveAssemblyReference.cache
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\ghEmguCV.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\ghEmguCV.pdb
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.DebuggerVisualizers.VS2015.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.UI.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.UI.GL.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.World.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\ZedGraph.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.UI.xml
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.UI.GL.xml
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Emgu.CV.World.xml
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\bin\Microsoft.VisualStudio.DebuggerVisualizers.xml
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\obj\Debug64\ghEmguCV.dll
+C:\Users\Hanshen\Documents\GitHub\ghEmguCV\ghEmguCV\obj\Debug64\ghEmguCV.pdb
